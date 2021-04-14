@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edea570d-8880-4418-a225-b7d8752cd5e4" name="Default Changelist" comment="第一次提交">
-      <change afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="edea570d-8880-4418-a225-b7d8752cd5e4" name="Default Changelist" comment="删除dist">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <workItem from="1617972938287" duration="8442000" />
       <workItem from="1618366063506" duration="4227000" />
       <workItem from="1618389381148" duration="2882000" />
-      <workItem from="1618392280309" duration="4017000" />
+      <workItem from="1618392280309" duration="4732000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1618392508117</created>
@@ -74,7 +73,28 @@
       <option name="project" value="LOCAL" />
       <updated>1618403656668</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修改npm路径。">
+      <created>1618407473639</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618407473639</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修改.gitignore">
+      <created>1618407499015</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618407499015</updated>
+    </task>
+    <task id="LOCAL-00005" summary="删除dist">
+      <created>1618407524075</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618407524075</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +113,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
+    <MESSAGE value="修改npm路径。" />
+    <MESSAGE value="修改.gitignore" />
+    <MESSAGE value="删除dist" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除dist" />
   </component>
 </project>
