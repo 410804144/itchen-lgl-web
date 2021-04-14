@@ -1,0 +1,24 @@
+.page-login {
+  @include flexCenter(column);
+  width: 100%;
+  min-height: 100%;
+  background: #f0f2f5 url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg') center 110px
+    no-repeat;
+
+  .header {
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      height: 100%;
+      margin-right: 16px;
+    }
+
+    .title {
+      font-size: 33px;
+      font-weight: 600;
+    }
+  }
+}

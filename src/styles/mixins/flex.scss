@@ -1,0 +1,19 @@
+/** flex 水平垂直居中 */
+@mixin flexCenter($direction: row) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @if ($direction != row) {
+    flex-direction: $direction;
+  }
+}
+
+/** 左右分布 */
+@mixin flexBetween($direction: row) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @if ($direction != row) {
+    flex-direction: $direction;
+  }
+}
