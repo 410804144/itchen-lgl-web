@@ -17,9 +17,15 @@
     overflow-x: hidden;
   }
   .footer {
-    margin: 16px 16px 32px 16px;
+    margin: 8px 0;
     display: flex;
     justify-content: center;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+    color: #11191E;
   }
 }
 
@@ -49,17 +55,7 @@
   .item-unit {
     font-size: 14px;
     color: #888C8F;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     margin-left: 4px;
-  }
-  .item-tool {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    justify-content: flex-end;
-    align-items: flex-end;
-    .tool-item {
-      margin-left: 5px;;
-    }
   }
 }

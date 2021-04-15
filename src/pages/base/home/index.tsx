@@ -7,6 +7,7 @@ import * as itemSvc from '@/services/item'
 import * as comSvc from '@/services/com'
 import './style.scss'
 import { Form } from 'antd'
+import {CloseOutlined, EditOutlined, SettingOutlined} from '@ant-design/icons'
 
 function Home() {
 
@@ -149,24 +150,26 @@ function Home() {
           <Row gutter={[16, 16]}>
             {data.map((item, index) => (
               <Col key={index} className={'item'} xs={24} sm={12} md={8} lg={6} xl={4} xxl={2}>
-                <Card cover={<img alt="" src={'/web_api/com/image/' + item.itemImage} />}>
+                <Card
+                  cover={<img alt="" src={'/web_api/com/image/' + item.itemImage} />}
+                  actions={user.isLogin && [
+                    <EditOutlined onClick={() => handleModify(item)} />,
+                    <Popconfirm
+                      placement="topRight"
+                      title={'确定删除吗?'}
+                      onConfirm={() => handleDelete(item)}
+                      okText="删除"
+                      cancelText="取消"
+                    >
+                      <CloseOutlined />
+                    </Popconfirm>
+                  ]}
+                >
                   <div className={'card-body'}>
                     <div className={'item-name'}>{item.itemName}</div>
                     <div className={'item-row'}>
-                      <div className={'item-price'}>{item.price}</div>
+                      <div className={'item-price'}>{'¥' + item.price}</div>
                       {!!item.unit && <div className={'item-unit'}>{item.unit}</div>}
-                      {user.isLogin && <div className={'item-tool'}>
-                        <a className={'tool-item'} onClick={() => handleModify(item)}>修改</a>
-                        <Popconfirm
-                          placement="topRight"
-                          title={'确定删除吗?'}
-                          onConfirm={() => handleDelete(item)}
-                          okText="删除"
-                          cancelText="取消"
-                        >
-                          <a className={'tool-item'}>{'删除'}</a>
-                        </Popconfirm>
-                      </div>}
                     </div>
                   </div>
                 </Card>
@@ -180,6 +183,7 @@ function Home() {
           <Button type="primary" onClick={handleAdd}>{'新增商品'}</Button>
         </div>
       )}
+      <div className={'copyright'}>Copyright©2021 itchen出品</div>
       {visible && <Modal
         title="商品信息"
         visible={visible}
